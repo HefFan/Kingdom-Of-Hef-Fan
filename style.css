@@ -30,14 +30,13 @@ h4{
 	}
 .rghsd{
 	border-radius:15px;
-	padding: 1px 5px 1px 60%;
+	padding: 7px;
 	background-color: lightGreen;
 	border: 5px solid #66CC33;
 	position: fixed;
 	top: 0px;
 	left:0px;
 	right: 0px;
-	float:right;
 	}
 a{
 	padding:10px 20px 10px 20px;
@@ -195,5 +194,42 @@ h5{
 	border-radius: 15px;
 	}
 .sec-5{
-	
+	border-radius=0px;
+	background-color: lightGreen;
+	width:100%;
+	height:500px;
+	margin-top:50px;
 	}
+.colm1 {
+	width:100%;
+	}
+.hideshow {
+	width:40px;
+	height:40px;
+	border: 2px solid black;
+	border-radius:20px;
+	background-color:lightGreen;
+	position:fixed;
+	top:205px;
+	}
+.hideshow2 {
+	width:40px;
+	height:40px;
+	border: 2px solid black;
+	border-radius:20px;
+	background-color:lightGreen;
+	position: fixed;
+     top: 315px;
+     right: 15px
+	}
+
+
+
+
+
+
+
+
+
+
+
