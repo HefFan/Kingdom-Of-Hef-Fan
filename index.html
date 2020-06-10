@@ -2,14 +2,13 @@
 <html>
 	<head>
 		<title> www.heffankingdom.com </title>
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title> www.heffankingdom.com </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="script.js">
 		</script>
-		<meta charset="UTF-8">
-  		<meta name="description" content="Kingdom Of Hef Fan website">
-  		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  		<meta name="author" content="John Cendol">
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<section> <!-- This is heading section -->
@@ -33,7 +32,7 @@
 		</table>
 		</div>
 		<div class="rghsd"><!-- Page sheet link table -->
-			<h4> <a class="page" href=""> Home </a> <a class="page" href=""> Membership </a> <a class="page" href=""> About </a></h4>
+			<h2 style="text-align:left;float:left; margin-block: 0em;">Kingdom of Hef Fan</h2><h4 style="display:inline;float:right;"> <a class="page" href=""> Home </a> <a class="page" href=""> Membership </a> <a class="page" href=""> About </a></h4>
 			</div>
 		<section class="sec-2"> <!-- This is body section -->
 			<h2> Welcome to Kingdom Of Hef Fan! </h2>
@@ -69,24 +68,26 @@
 				<h3> Just follow the instruction below and fill the registration form</h3>
 				<div class="regform"><form>
 					<h4 class="input- "> What is your name? <sub>*You can use your nickname or not the real name</sub></h4>
-					<input type="text" value="your name here" class="input- input-wid">
+					<input type="text" value="your name here" class="input- input-wid" id="name_">
 					<h4 class="input-"> How old are you?</h4>
-					<input type="number" value="your age here" class="input- input-wid">
+					<input type="number" value="your age here" class="input- input-wid" id="age_">
 					<h4 class="input-"> Tell us the reason why you want to be the member of KHF?</h4>
-					<input type="text" value="your reason here" class="input- input-wid">
+					<input type="text" value="your reason here" class="input- input-wid" id="reason_">
 					<h4 class="input-"> How can we contact you?</h4>
-					<input type="email" value="your email account here" class="input- input-wid">
+					<input type="email" value="your email account here" class="input- input-wid" id="email_">
 					<h4 class="input-"> Create your own KHF password </h4>
-					<input type="password" class="input- input-wid">
+					<input type="password" class="input- input-wid" id="password_">
 					<h4 class="input-"> Confirm your password </h4>
-					<input type="password" class="input- input-wid"><br><br><br>
+					<input type="password" class="input- input-wid" id="confirmPassword"><br><br><br>
 				</form>
-				<input type="button" class="submit-" onclick="submit()" value="Submit"></input> <br><br>
+				<input type="button" class="submit-" value="Submit" id="submit_" onclick="submit()"></input> <br><br>
 			</div>
 			</div>
 		</section>
 		<section class="sec-3"> <!-- This is left-side section -->
-			<div class="pubchat"><!-- public chat -->
+			<img src="images/leftdir.png" type="button" class="hideshow" id="leftdir1" onclick="hidePubChat()">
+			<img src="images/rghtdir.png" type="button" class="hideshow" id="rghtdir1" onclick="showPubChat()">
+			<div class="pubchat" id="pub_chat"><!-- public chat -->
 				<h5> This is Public Chat Box </h5>
 				<hr><p id="cantchat"> Sign in to unlock Chat Box </p><br><br>
 				<br><br><br><br><br><br><br><br><br><br>
@@ -96,7 +97,9 @@
 			</div>
 		</section>
 		<section class="sec-4"> <!-- This is right-side section -->
-			<div class="content-box"><!-- Content box -->
+			<img src="images/rghtdir.png" type="button" class="hideshow2" id="rghtdir2" onclick="hideContBox()">
+			<img src="images/leftdir.png" type="button" class="hideshow2" id="leftdir2" onclick="showContBox()">
+			<div class="content-box" id="cont_box"><!-- Content box -->
 				<h5> KHF's Content </h5><hr>
 				<p id="cantsee"> Sign in to unlock Content Box </p><br><br><br><br><br><br>
 				<div class="srch-cont">
@@ -105,7 +108,15 @@
 			</div>
 		</section>
 		<section class="sec-5"> <!-- This is footer section -->
+			<div class="colm1">
+			<table> <tr><td><h4>Website developer Manager </h4></td><td><h4> Information contact person: </h4></td><td><h4> About Us </h4></td>
+			<tr><td><h4> Official @line id: </h4></td><td><h4> Notification center </h4></td>
+			<tr><td><h4> Follow us on Instagram : </h4></td></tr>
+			<tr><td><h4> Our Facebook at: </h4></td></tr>		
+			</table>
 		</section>
+		<script type="text/javascript" src="script.js">
+		</script>
 	</body>
 	<foot>
 	</foot>
